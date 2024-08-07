@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { max-width: 400px; margin: 0 auto; }
+        div { margin-bottom: 10px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; box-sizing: border-box;}
+        button {background-color:red;color:wheat;}
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Job Search Registration</h2>
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text"id="name"name="name"required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel"id="phone"name="phone"required>
+        </div>
+        <div>
+            <label for="position">Position:</label>
+            <input type="text"id="position"name="position"required>
+        </div>
+        <div>
+            <label for="experience">Years of Experience:</label>
+            <input type="number"id="experience"name="experience"min="0"required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"id="email"name="email"required>
+        </div>
+        <div>
+            <label for="location">Preferred Location:</label>
+            <select id="location" name="location" required>
+                <option value="">Select</option>
+                <option value="BLR">BLR</option>
+                <option value="HYD">HYD</option>
+                <option value="CHENNAI">CHENNAI</option>
+                <option value="DELHI">DELHI</option>
+                <option value="GOA">GOA</option>
+            </select>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
