@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <style>
+        body { font-family: Arial; margin: 0;}
+        .container { max-width: 400px; margin: auto; }
+        h1 { text-align: left; }
+        input { width: 100%; margin: 5px 0; }
+        button { width: 100%; margin:10px 0;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Profile</h1>
+        <input type="text"id="name"placeholder="Name">
+        <input type="email"id="email"placeholder="Email">
+        <input type="text"id="username"placeholder="Username">
+        <input type="password"id="password"placeholder="Password">
+        <button onclick="createProfile()">Create Profile</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
